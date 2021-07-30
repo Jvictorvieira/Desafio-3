@@ -14,8 +14,8 @@ function App() {
     <div>
         <header>
           <div className='nav-bar title'>
-          <h2>Seed a Bit</h2>
-          <div className='buttons-layout' >
+          <h2 className='subtitle'>Seed a Bit</h2>
+          <div className='button-layout' >
             <nav >
               <button type='button' value='Home' name="Home" onClick='' className='button'>Home</button>
               <button type='button' value='Deliver' name="Seed Delivery" onClick='{Changevalue(value)}' className='button'>Seed Delivery</button>

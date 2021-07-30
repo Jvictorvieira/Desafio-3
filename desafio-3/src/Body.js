@@ -1,38 +1,37 @@
 import React from "react";
+import "./Style.css"
 
 
 function Body (value) {
     if (value ==='Home') {
         return (
-            <div>
-                <p>oioioiooii</p>
+            <div className='Container'>
+                <h2 className='subtitle'>About us</h2>
+                <p></p>
             </div>
         )
     } else if (value ==='Site') {
         return (
-            <div>
-                <p>Abrahom</p>
+            <div className='Container'>
+                <h2 className='subtitle'>Site Constitucional</h2>
+                <p></p>
             </div>
         )   
     } else if (value ==='Consul') {
         return (
-            <div>
-                <p>Pirocudo</p>
+            <div className='Container'>
+                <h2 className='subtitle'>Consultoria</h2>
+                <p></p>
             </div>
         )   
-        } else if (value==='Deliver') {
+    } else if (value==='Deliver') {
         return (
-            <div>
-                <p>bucetudo</p>
+            <div className='Container'>
+                <h2 className='subtitle'>Seed Delivery</h2>
+                <p></p>
             </div>
         )   
-    } else if (value ==='Cont') {
-        return (
-            <div>
-                <p>aaasasaaaa</p>
-            </div>
-        )   
-    }
+    }  
 }
 
 export default Body;

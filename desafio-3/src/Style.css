@@ -1,0 +1,25 @@
+.nav-bar {
+    background-color: rgba(0, 0, 255, 0.212);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-layout {
+    margin: 12px;
+}
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+.button:hover {
+    box-shadow: 0 5px 5px -5px blue;
+}

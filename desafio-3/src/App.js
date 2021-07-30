@@ -1,46 +1,38 @@
 import React from "react";
-import Body from "./Body.js";
+import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
+import Home from "./assets/Home/Home.js";
+import Seedapp from "./assets/Seedapp/Seedapp.js";
+import Site from "./assets/Site/Site.js";
+import Consult from "./assets/Cosult/Consult.js";
 import "./Style.css"
-
-var value = 'Home'
-
-
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 
 function App() {
-  function Changevalue (valor) {
-    return value=valor
-  }
   return (
-    <div>
-        <header>
-          <div className='nav-bar title'>
-          <h2 className='subtitle'>Seed a Bit</h2>
-          <div className='button-layout' >
-            <nav >
-              <button type='button' value='Home' name="Home" onClick='' className='button'>Home</button>
-              <button type='button' value='App' name="Seed App" onClick='{Changevalue(value)}' className='button'>Seed Delivery</button>
-              <button type='button' value='Site' name="Site Constitucional" onClick='{Changevalue(value)}' className='button'>Site Constitucional</button>
-              <button type='button' value='Consul' name="Consultoria" onClick='{Changevalue(value)}' className='button'>Consultoria</button>
-              <button type='button' value='Cont' name="Contatos" onClick='{Changevalue(value)}' className='button'>Contatos</button>
-            </nav>
-          </div>
-          
-          </div>
-        </header>
-        <div className='body'>
-          <div>{
-            Body(value)
-            }</div>
+    <div className='site-style'>
+        <Navbar />
+        <BrowserRouter>
+      <Switch>
+        <Route path="/Home" exact>
+          <Home />
+        </Route>
+        <Route path="/Seedapp" exact>
+          <Seedapp />
+        </Route>
+        <Route path="/Consult" exact>
+          <Consult />
+        </Route><Route path="/Site" exact>
+          <Site />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </BrowserRouter>
 
-        </div>
-        <footer>
-          <div className='footer'>
-                <p className='contatos'>Contatos</p>
-            </div>
-        </footer>
+        <Footer />
   
-            
-        
     </div>
   );
 }

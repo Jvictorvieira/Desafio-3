@@ -6,8 +6,11 @@ function Navbar () {
     return (
         <header>
           <div className='nav-bar title'>
-          <h2 className='subtitle-nav'>Seed a Bit</h2>
-          <img src='./logo-2.png'/>
+          <div className='brand-seed'>
+            <h2 className='subtitle-nav'>Seed a Bit</h2>
+            <img className='logo-seed' src='https://seedabit.org.br/assets/img/logo-2.png' alt='seed a bit logo'/>
+          </div> 
+          
           <div className='button-layout' >
             <nav >
               <a href={'./Home'} className='button'> <p>Home </p></a>

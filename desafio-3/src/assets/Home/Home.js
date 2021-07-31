@@ -15,7 +15,7 @@ function Home () {
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <div>
-                    <img src="/Ciranda1_2019_04.jpg" alt="Ciranda seed"/>
+                    <img className='home-img' src="https://seedabit.org.br/assets/img/Ciranda1_2019_04.jpg" alt="Ciranda seed"/>
                 </div>
                 
             </div>

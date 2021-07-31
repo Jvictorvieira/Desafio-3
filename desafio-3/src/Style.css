@@ -29,6 +29,16 @@
     color: #0D1E66;
 
 }
+.brand-seed{
+    display: flex;
+    align-items: center;
+}
+.logo-seed{
+    width: 50px;
+    height: 60px;
+    margin-left: 10px;
+}
+
 .button-layout {
     margin: 12px;
 }

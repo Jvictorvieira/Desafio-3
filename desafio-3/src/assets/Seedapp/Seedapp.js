@@ -17,7 +17,7 @@ function Seedapp () {
                     </p>
                 </div>
                 <div>
-                    <img src="https://pixabay.com/images/id-3614766/" alt='apps'/>
+                    <img className='seedapp-img' src="https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png" alt='apps'/>
                 </div>
                 
             </div>

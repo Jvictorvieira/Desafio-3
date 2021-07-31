@@ -6,7 +6,7 @@ import Seedapp from "./assets/Seedapp/Seedapp.js";
 import Site from "./assets/Site/Site.js";
 import Consult from "./assets/Cosult/Consult.js";
 import "./Style.css"
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (

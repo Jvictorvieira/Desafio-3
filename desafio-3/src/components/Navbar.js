@@ -1,18 +1,19 @@
 import React  from "react";
-import {Link} from "react-router-dom";
+
 import "../Style.css"
 
 function Navbar () {
     return (
         <header>
           <div className='nav-bar title'>
-          <h2 className='subtitle'>Seed a Bit</h2>
+          <h2 className='subtitle-nav'>Seed a Bit</h2>
+          <img src='./logo-2.png'/>
           <div className='button-layout' >
             <nav >
-              <a href={'./Home'} className='button'>Home</a>
-              <a href={'./Seedapp'} className='button'>Seed App</a>
-              <a href={'./Site'} className='button'>Site Constitucional</a>
-              <a href={'./Consult'} className='button'>Consultoria</a>
+              <a href={'./Home'} className='button'> <p>Home </p></a>
+              <a href={'./Seedapp'} className='button'><p>Seed App </p> </a>
+              <a href={'./Site'} className='button'> <p>Site Constitucional </p></a>
+              <a href={'./Consult'} className='button'> <p>Consultoria </p></a>
               </nav>
           </div>
           
